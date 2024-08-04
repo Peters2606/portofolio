@@ -258,6 +258,40 @@
           </div>
         </div>
       </div>
+      <!-- social media -->
+       <section id="MySosial">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Sosial Media</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="sosmed-box">
+                <h4 class="sosmed-name">Linked In</h4>
+                <img src="img/galery/logo/3.png" alt="linkedin" class="sosmed-img">
+                <a href="" class="btn btn-light sosmed-detail-button">detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="sosmed-box">
+                <h4 class="sosmed-name">instagram</h4>
+                <img src="img/galery/logo/4.png" alt="instagram" class="sosmed-img">
+                <a href="" class="btn btn-light sosmed-detail-button">detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="sosmed-box">
+                <h4 class="sosmed-name">Tiktok</h4>
+                <img src="img/galery/logo/1.png" alt="tiktok" class="sosmed-img">
+                <a href="" class="btn btn-light sosmed-detail-button">detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- social media end -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -549,6 +583,15 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <!-- tilt js -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".sosmed-box"), {
+        max: 25,
+        speed: 400
       });
     </script>
   </body>
